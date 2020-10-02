@@ -1,21 +1,25 @@
-import React from "react";
-import Navigation from "./components/Navigation";
-import Parallax from "./components/Parallax";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
-import ScrollButton from "./components/ScrollButton";
-import Footer from "./components/Footer";
+import React, {useState, useEffect} from "react";
+import Home from "./components/Home";
 import Preloader from "./components/Preloader";
 function App() {
+  const [state, setState] = useState({loaded:false})
+  const loaded = state.loaded
+  function load(){
+    
+    setState(prevState => {
+      return{...prevState, loaded:!prevState.loaded}
+    })
+  
+  }
+    useEffect(() => {
+      window.addEventListener("load", ()=>{
+        load()
+      })
+    },[]);
+  
   return (
     <>
-      <Navigation />
-      <ScrollButton />
-      <Parallax />
-      <Services />
-      <Contact />
-      <Footer />
-      <Preloader/>
+      {loaded?<Home />:<Preloader/>}
     </>
   );
 }

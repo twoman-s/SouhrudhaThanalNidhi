@@ -14,3 +14,8 @@
   font-size: 25px;
   display: none;
 }
+
+.fa .fa-arrow-up{
+  color: var(--main-color);
+
+}
