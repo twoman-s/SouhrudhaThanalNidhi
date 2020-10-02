@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import ScrollButton from "./components/ScrollButton";
 import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
+      <Preloader/>
     </>
   );
 }
