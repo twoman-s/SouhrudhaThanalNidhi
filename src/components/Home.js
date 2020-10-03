@@ -3,7 +3,7 @@ import Parallax from "./Parallax";
 import Contact from "./Contact";
 import Services from "./Services";
 import ScrollButton from "./ScrollButton";
-// import BoardMembers from "./BoardMembers";
+import BoardMembers from "./BoardMembers";
 
 function App() {
   useEffect(() => {
@@ -14,7 +14,7 @@ function App() {
       <ScrollButton />
       <Parallax />
       <Services />
-      {/* <BoardMembers/> */}
+      <BoardMembers/>
       <Contact />
     </>
   );
