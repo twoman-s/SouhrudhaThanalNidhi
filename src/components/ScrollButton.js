@@ -8,10 +8,13 @@ function ScrollButton() {
   }
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 400) {
-        document.getElementById("btnUp").style.display = "block";
-      } else {
-        document.getElementById("btnUp").style.display = "none";
+      var button = document.getElementById("btnUp");
+      if (button != null) {
+        if (window.pageYOffset >= 400) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
       }
     });
   });

@@ -1,20 +1,19 @@
-import React from "react";
-import Navigation from "./Navigation";
+import React, {useEffect} from "react";
 import Parallax from "./Parallax";
 import Contact from "./Contact";
 import Services from "./Services";
 import ScrollButton from "./ScrollButton";
-import Footer from "./Footer";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[]);
   return (
     <>
-      <Navigation />
       <ScrollButton />
       <Parallax />
       <Services />
       <Contact />
-      <Footer />
     </>
   );
 }
