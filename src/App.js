@@ -1,35 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from "react";
 import Home from "./components/Home";
 import Preloader from "./components/Preloader";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-function App() {
-  const [state, setState] = useState({ loaded: false });
-  const loaded = state.loaded;
-  function load() {
-    setState((prevState) => {
-      return { loaded: true };
-    });
-  }
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    window.addEventListener("load", () => {
-      load();
-    });
-  }, []);
 
-  return (
-    <>
-      {loaded ? <>
-          <Navigation />
+class App extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      loaded: false,
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("load", () => {
+    this.setState({
+      loaded: true,
+    });
+  })
+  }
+  render() {
+    return (
+      <>
+        {this.state.loaded ? 
+          <>
+            <Navigation />
             <Home />
-          <Footer /> 
+            <Footer />
           </>
-          : (
-        <Preloader />
-      )}
-    </>
-  );
+         : 
+          <Preloader />
+        }
+      </>
+    );
+  }
 }
+
+// function App() {
+//   var [state, setState] = useState(false);
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//     window.addEventListener("load", () => {
+//       console.log(state)
+//       setState(state=true)
+//       console.log(state)
+//     });
+//   });
+
+//   return (
+//     <>
+//       {state ? <>
+//           <Navigation />
+//             <Home />
+//           <Footer />
+//           </>
+//           : (
+//         <Preloader />
+//       )}
+//     </>
+//   );
+// }
 
 export default App;

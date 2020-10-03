@@ -20,7 +20,7 @@ function Services() {
                     The best gold loan schemes with lowest interest.
                   </div>
                 </div>
-                <div class="theback">
+                <div className="theback">
                   <div className="service-title back">Gold Loan</div>
                   <div className="service-desc back">
                     <ul className="list">
@@ -43,7 +43,7 @@ function Services() {
                     Get more with our low interest property loan schemes
                   </div>
                 </div>
-                <div class="theback">
+                <div className="theback">
                   <div className="service-title back">Property Loan</div>
                   <div className="service-desc back">
                     <ul className="list">
@@ -66,7 +66,7 @@ function Services() {
                     Get more with our various Fixed Deposit schemes.
                   </div>
                 </div>
-                <div class="theback">
+                <div className="theback">
                   <div className="service-title back">Fixed Deposits</div>
                   <div className="service-desc back">
                     <ul className="list">
@@ -89,7 +89,7 @@ function Services() {
                     Higher interest rate savings scheme
                   </div>
                 </div>
-                <div class="theback">
+                <div className="theback">
                   <div className="service-title back">Savings Deposits</div>
                   <div className="service-desc back">
                   <ul className="list">
@@ -113,7 +113,7 @@ function Services() {
                   Earn more interest at regular intervals
                   </div>
                 </div>
-                <div class="theback">
+                <div className="theback">
                   <div className="service-title back">Recurring Deposits</div>
                   <div className="service-desc back">
                   <ul className="list">
