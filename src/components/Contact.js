@@ -40,7 +40,7 @@ function Contact() {
             Send us a message and we will contact you back
           </p>
 
-          <div className="info">
+          {/* <div className="info">
             <div className="information">
               <img src="img/location.png" className="icon" alt="" />
               <p>92 Cherry Drive Uniondale, NY 11553</p>
@@ -53,7 +53,7 @@ function Contact() {
               <img src="img/phone.png" className="icon" alt="" />
               <p>123-456-789</p>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="social-media">
             <p>Connect with us :</p>
