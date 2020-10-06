@@ -50,7 +50,7 @@ function Services() {
                       <li>Lowest interest rates</li>
                       <li>Simplified documentations</li>
                     </ul>
-                    <h6>*Conditions Apply </h6>                                      
+                    <h6>*Conditions Apply </h6>
                   </div>
                 </div>
               </div>
@@ -92,11 +92,11 @@ function Services() {
                 <div className="theback">
                   <div className="service-title back">Savings Deposits</div>
                   <div className="service-desc back">
-                  <ul className="list">
+                    <ul className="list">
                       <li>Higher interest rates</li>
                       <li>Simplified documentations</li>
                     </ul>
-                    <h6>*Conditions Apply </h6> 
+                    <h6>*Conditions Apply </h6>
                   </div>
                 </div>
               </div>
@@ -110,23 +110,25 @@ function Services() {
                   </div>
                   <div className="service-title">Recurring Deposits</div>
                   <div className="service-desc">
-                  Earn more interest at regular intervals
+                    Earn more interest at regular intervals
                   </div>
                 </div>
                 <div className="theback">
                   <div className="service-title back">Recurring Deposits</div>
                   <div className="service-desc back">
-                  <ul className="list">
+                    <ul className="list">
                       <li>Higher interest rates</li>
                       <li>Simplified documentations</li>
                     </ul>
-                    <h6>*Conditions Apply </h6> 
+                    <h6>*Conditions Apply </h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h6 className="ending">Please contact branch for more details</h6>
+          <h6 className="ending pt-3">
+            Please contact branch for more details
+          </h6>
         </div>
       </div>
     </div>

@@ -27,13 +27,17 @@ function Parallax() {
           <div className="content opacity">
             <h3 className="title">About Us</h3>
             <p className="text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
-              officiis quos expedita ipsa, a quidem inventore voluptates debitis
-              accusamus tenetur qui et voluptas dicta, culpa earum, doloribus
-              odio consectetur consequuntur soluta quasi nobis! Deserunt
-              voluptatum reiciendis iure expedita sequi quisquam laboriosam
-              temporibus exercitationem.
+              Souhrudha Thanal Nidhi Limited is a company in the Indian
+              non-banking finance sector, recognized under section 406 of the
+              Companies Act, 2013. We performs the functions of lending and
+              borrowing of money within our members.We promotes the art of
+              saving and utilization of funds within our member community.
+              <br />
+              <br />
             </p>
+            <span style={{ fontWeight: "bold", textAlign: "left" }}>
+              CIN : U65929KL2020PLN063501
+            </span>
           </div>
 
           <div className="imgContainer opacity">

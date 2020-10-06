@@ -1,47 +1,103 @@
-
 .parallax-effect-img {
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  background-image: url("https://th.bing.com/th/id/OIP.Mo3m4FuzFOyad374u826yQHaKW?pid=Api&rs=1");
   background-size: cover;
   background-repeat: no-repeat;
   width: 300px;
-  height: 400px;
+  height: 370px;
+  transition: all 0.5s ease;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-image: url(./images/directors/vincent.jpeg);
 }
-.over{
+.parallax-effect-img2 {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 370px;
+  transition: all 0.5s ease;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-image: url(./images/directors/vindeep.jpg);
+}
+.parallax-effect-img3 {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 370px;
+  transition: all 0.5s ease;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-image: url(./images/directors/ullas.jpg);
+}
+.over {
   background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 0;
+  cursor: pointer;
 }
-.parallax-effect-img:hover .over{
-  background: rgba(0, 0, 0, 0.5);
+.parallax-effect-img:hover .over {
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.parallax-effect-img:hover {
+  border: 3px solid var(--main-color);
+}
+.parallax-effect-img2:hover .over {
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.parallax-effect-img2:hover {
+  border: 3px solid var(--main-color);
+}
+.parallax-effect-img3:hover .over {
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+.parallax-effect-img3:hover {
+  border: 3px solid var(--main-color);
 }
 .inner-element {
-    transform:translate(-50%,-50%) translateZ(40px) scale(0.8);
-    position: absolute;
-    text-shadow: 2px 2px 2px black;
-    color: var(--main-color-combo);
-    width: 100%;
-    text-align: center;
-  }
-  .inner-element:nth-child(1){
-    top: 80%;
-    left: 50%;
-    font-size: 3rem;
-    /* border: 2px solid var(--main-color-combo); */
-    border-radius: 35px;
-    transition: all .5s ease;
-  }
-  .inner-element:nth-child(2){
-    top: 90%;
-    left: 50%;
-    font-size: 20px;
-    margin: 0!important;
-  }
+  transform: translate(-50%, -50%) translateZ(40px) scale(0.8);
+  position: absolute;
+  text-shadow: 2px 2px 2px black;
+  color: var(--main-color-combo);
+  width: 100%;
+  text-align: center;
+}
+.inner-element:nth-child(1) {
+  top: 92%;
+  left: 50%;
+  font-size: 2rem;
+  /* border: 2px solid var(--main-color-combo); */
+  border-radius: 35px;
+  transition: all 0.5s ease;
+}
 
-  .parallax-effect-img:hover .inner-element:nth-child(1){
-    background-color: var(--main-color-combo);
-    border: 2px solid var(--main-color);
-    color: var(--main-color);
-  }
+.parallax-effect-img:hover .inner-element:nth-child(1) {
+  background-color: var(--main-color-combo);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 10px;
+}
+.parallax-effect-img2:hover .inner-element:nth-child(1) {
+  background-color: var(--main-color-combo);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 10px;
+}
+.parallax-effect-img3:hover .inner-element:nth-child(1) {
+  background-color: var(--main-color-combo);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  padding: 10px;
+}

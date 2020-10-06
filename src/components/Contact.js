@@ -55,7 +55,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="social-media">
+          {/* <div className="social-media">
             <p>Connect with us :</p>
             <div className="social-icons">
               <a href="fb">
@@ -71,7 +71,7 @@ function Contact() {
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="contact-form">

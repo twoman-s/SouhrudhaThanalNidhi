@@ -1,11 +1,22 @@
 import React from "react";
 import "./../assets/Navbar.css";
 import logo from "./../assets/images/logo/logo.png";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   function handleNavClick() {
     document.querySelector(".navbar-toggler").classList.add("collapsed");
     document.querySelector("#navbarNavAltMarkup").classList.remove("show");
+  }
+  function handleDirectorNavClick() {
+    document.querySelector(".navbar-toggler").classList.add("collapsed");
+    document.querySelector("#navbarNavAltMarkup").classList.remove("show");
+    var links = document.querySelectorAll(".nav-link");
+    for (var i = 1; i < links.length; i++) {
+      links[i].style.display = "none";
+    }
+    links[0].href = "/";
+    document.querySelectorAll(".logo-name").href = "/";
   }
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -54,6 +65,13 @@ function Navigation() {
           >
             Contact Us
           </a>
+          <Link
+            onClick={handleDirectorNavClick}
+            className="nav-item nav-link"
+            to="/directors"
+          >
+            Our Directors
+          </Link>
         </div>
       </div>
     </nav>

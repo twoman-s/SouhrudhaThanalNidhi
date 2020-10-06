@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import Preloader from "./components/Preloader";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import BoardMembers from "./components/BoardMembers";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -13,23 +15,28 @@ class App extends Component {
   }
   componentDidMount() {
     window.addEventListener("load", () => {
-    this.setState({
-      loaded: true,
+      this.setState({
+        loaded: true,
+      });
     });
-  })
   }
   render() {
     return (
       <>
-        {this.state.loaded ? 
+        {this.state.loaded ? (
           <>
-            <Navigation />
-            <Home />
-            <Footer />
+            <Router>
+              <Navigation />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/directors" component={BoardMembers} />
+              </Switch>
+              <Footer />
+            </Router>
           </>
-         : 
+        ) : (
           <Preloader />
-        }
+        )}
       </>
     );
   }

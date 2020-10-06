@@ -34,7 +34,7 @@ footer {
   position: absolute;
   content: "";
   height: 2px;
-  width: 350px;
+  width: 270px;
   background: #1a1a1a;
 }
 
@@ -61,6 +61,7 @@ footer {
   font-weight: 500;
   padding-left: 10px;
   color: white;
+  text-align: justify;
 }
 .bottom center {
   padding: 9px;
@@ -79,4 +80,17 @@ footer {
   .main-content .box {
     margin: 5px 0;
   }
+}
+.map {
+  text-align: center;
+}
+.map iframe {
+  margin-top: 20px;
+}
+.content li > img {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
 }

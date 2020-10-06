@@ -26,7 +26,14 @@ function Carousel() {
           <div className="carousel-caption">
             <h4>We are your</h4>
             <h2>One stop banking solution</h2>
-            <button className="btn carousel-button">Why Us?</button>
+            <button
+              onClick={() => {
+                window.location.href = window.location.href + "#services";
+              }}
+              className="btn carousel-button"
+            >
+              Why Us?
+            </button>
           </div>
         </div>
         <div className="carousel-item">
@@ -34,7 +41,14 @@ function Carousel() {
           <div className="carousel-caption">
             <h4>Most Trustable Services</h4>
             <h2>Check out our Board Members</h2>
-            <button className="btn carousel-button">Go</button>
+            <button
+              onClick={() => {
+                window.location.href = window.location.href + "directors";
+              }}
+              className="btn carousel-button"
+            >
+              Go
+            </button>
           </div>
         </div>
         <div className="carousel-item">
