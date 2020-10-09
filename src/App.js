@@ -18,6 +18,7 @@ class App extends Component {
       this.setState({
         loaded: true,
       });
+      console.log(window.location.hash);
     });
   }
   render() {
@@ -41,30 +42,5 @@ class App extends Component {
     );
   }
 }
-
-// function App() {
-//   var [state, setState] = useState(false);
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//     window.addEventListener("load", () => {
-//       console.log(state)
-//       setState(state=true)
-//       console.log(state)
-//     });
-//   });
-
-//   return (
-//     <>
-//       {state ? <>
-//           <Navigation />
-//             <Home />
-//           <Footer />
-//           </>
-//           : (
-//         <Preloader />
-//       )}
-//     </>
-//   );
-// }
 
 export default App;

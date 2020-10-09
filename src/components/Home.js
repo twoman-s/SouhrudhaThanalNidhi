@@ -7,6 +7,9 @@ import ScrollButton from "./ScrollButton";
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    // window.onpopstate = (e) => {
+    //   console.log(e);
+    // };
   }, []);
   return (
     <>

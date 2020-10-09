@@ -27,7 +27,9 @@ function Navigation() {
               <span className="fa fa-map-marker"></span>
               <span className="text">
                 Souhrudha Thanal Nidhi Ltd <br />
-                Joysland Tower, Opposite Nandikkara Bus stop Mapranam <br />{" "}
+                Joysland Arcade, X/138, B8
+                <br />
+                Opposite Nandikkara Bus stop Mapranam <br />
                 Irinjalakuda, Thrissur Kerala 680712
               </span>
             </div>
@@ -41,7 +43,7 @@ function Navigation() {
               <span className="fa fa-envelope"></span>
               <span className="text">
                 <a href="mailto:souhrudhanidhi@gmail.com">
-                  souhrudhanidhi@gmail.com
+                  stnidhi2020@gmail.com
                 </a>
               </span>
             </div>

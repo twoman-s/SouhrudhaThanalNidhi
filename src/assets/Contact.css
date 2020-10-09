@@ -219,7 +219,9 @@ textarea.input {
 }
 
 .social-media {
+  display: none;
   padding: 2rem 0 0 0;
+  transition: all 0.5s ease;
 }
 
 .social-media p {
