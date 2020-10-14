@@ -4,7 +4,12 @@ import Preloader from "./components/Preloader";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import BoardMembers from "./components/BoardMembers";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -31,6 +36,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/directors" component={BoardMembers} />
+                <Route render={() => <Redirect to="/" />} />
               </Switch>
               <Footer />
             </Router>
